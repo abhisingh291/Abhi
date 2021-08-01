@@ -1,0 +1,31 @@
+<html>
+<head>
+<style>
+@keyframes animate{
+0%{}
+100%{
+width:40px;
+}
+}
+.mydiv{
+margin:80px;
+height:100px;
+width:200px;
+background-color:red;
+/*animation-name:animate;
+animation-duratrion:2s;
+animation-iteration-count:infinite;
+animation-timing-function:linear;
+animation-direction:alternate-reverse;*/
+animation:animate 2s alternate 2;
+animation-iteration-count:infinite;
+animation-play-state:running;
+animation-fillmode:backwords;
+}
+</style>
+</head>
+<body>
+<div class="mydiv">
+</div>
+</body>
+</html>

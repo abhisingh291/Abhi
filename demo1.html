@@ -1,0 +1,19 @@
+<html>
+<head>
+</head>
+<body>
+</body>
+<script>
+let l=['a','b','c','a','b','f','x','b']
+let count={a:2};
+l.forEach(function(item){
+if(count[item]){
+count [item]++;
+}
+else{
+count[item]=1;//count[a]=1;
+}
+})
+console.log(count);
+</script>
+</html>

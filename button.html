@@ -1,0 +1,42 @@
+<html>
+    <head>
+                 <style>
+                        body{
+                                     }      
+                               #btn{
+                            margin:100px;
+                              border:none;
+                               outline:none;
+                               height:30px;
+                                   width:100px;
+                                 background-color:#009688c7;
+                                 color:white;
+                                  font-weight:bolder;
+                                  position:relative;
+                                  }
+                         #btn::before{
+                         content:'';
+                           bottom:0x;
+                            left:0%;
+                           height:2px;
+                          position:absolute;
+                         transition:all 0.7s;
+                           }
+                      #btn::after{
+                       content:'';
+                              position:absolute;
+                             top:0px;
+                                border-top:2px solid black;
+                                  height:2px;
+                                 width:0%;
+                       transition:all 0.7s;
+                                    }
+                            #btn:hover::after{
+                            width:100%;
+                                  }
+                               </style>
+          </head>
+               <body>
+                    <button id="btn">Login</button>
+                 </body>
+</html>

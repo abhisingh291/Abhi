@@ -1,0 +1,62 @@
+<html>
+<head>
+<style>
+@keyframes downchar{
+0%{ }
+100%{
+transform:translatey(20px);
+}
+}
+@keyframes topchar{
+0%{ }
+100%{
+transform:translatey(-20px);
+}
+}
+
+
+
+*{
+margin:0px;
+padding:0px;
+}
+.text-box{
+text-align:center;
+margin-top:80px;
+}
+.text-box p{
+display:inline-block;
+font-size:30px;
+background-color:red;
+padding:10px;
+color:white;
+font-weight:bolder;
+box-shadow:3px 3px 3px rgba(0,0,0,0.7);
+}
+p:nth-child(even){
+/*animation-name:downchar;
+animation-duration:1s;
+animation-iteration-count:2;
+animation-direction:alternate;*/
+animation:downchar 2s alternate 2;
+}
+p:nth-child(odd){
+animation-name:topchar;
+animation-duration:1s;
+animation-iteration-count:2;
+animation-direction:aternate;
+}
+</style>
+</head>
+<body>
+<div class="text-box">
+<p>W</p>
+<p>E</p>
+<p>L</p>
+<p>C</p>
+<p>O</p>
+<p>M</p>
+<p>E</p>
+</div>
+</body>
+</html>

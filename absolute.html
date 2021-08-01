@@ -1,0 +1,48 @@
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+}
+ul{
+list-style-type:none;
+background-color:black;
+overflow:hidden;
+}
+li{
+float:left;
+}
+a{
+color:white;
+text-decoration:none;
+display:inline-block;
+width:100px;
+padding:2px;
+text-align;
+}
+a:hover{
+background-color:orange;
+}
+.dropdown-menu a{
+display:block;
+}
+.dropdown-menu{
+background-color:black;
+position:block;
+}
+</style>
+</head>
+<body>
+<ul>
+<li> <a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li class="dropdown"><a href="#">Serivces</a>
+<div class="dropdown-menu">
+<a href="#">Java devlopment</a>
+<a href="#">Python devlopment</a>
+</div>
+</li>
+</ul>
+</body>
+</html>

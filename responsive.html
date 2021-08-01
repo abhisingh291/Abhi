@@ -1,0 +1,99 @@
+<html>
+<head>
+<style>
+*{
+margin:0;
+padding:0;
+}
+nav{
+background-color:black;
+}
+nav ul{
+list-style-type:none;
+overflow:hidden;
+}
+nav ul li{ float:left;
+}
+nav ul li a{
+display:inline-block;
+text-decoration:none;
+color:white;
+padding:3px;
+width:100px;
+text-align:center;
+}
+a:hover{
+background-color:red;
+}
+.menu{
+border:none;
+outline:none;
+margin:1px;
+background:transparent;
+color:white;
+cursor:pointer;
+border:1px solid white;
+padding:2px;
+display:none;
+}
+.mob-nav{
+list-style-type:none;
+background-color:black;
+width:200px;
+height:100%;
+position:fixed;
+top:0px;
+left:0px;
+transform:translateX(-200px);
+transition:transform 2s;
+}
+.mob-nav a{
+display:block;
+color:white;
+text-decoration:none;
+padding:4px;
+text-align:center;
+clear:both;
+}
+.close{
+color:white;
+float:right;
+cursor:pointer;
+}
+@media screen and(max-width:800px);
+{
+.menu
+display:block;
+}
+nav ul{
+display:none;
+}
+}
+</style>
+</head>
+<body>
+<nav>
+<button class="menu">Menu</button>
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">About</a></li>
+</ul>
+</nav>
+<ul class="mob-nav">
+<li class="close">X</li>
+<li <a href="#">Home</a></li>
+<li <a href="#">About</a></li>
+</body>
+<script>
+let menu=document.queryselector(".menu");
+let mobnav=document.queryselector(".mob-nav");
+let close=document.queryselector(".close");
+menu.addEventListener("click",function(){
+mobnav.style.transform="translateX(0px)";
+});
+close.addEventListener("click",function(){
+mobnav.style.transform="translateX(-200px)";
+});
+
+</script>
+</html>
